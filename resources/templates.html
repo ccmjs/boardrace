@@ -1,0 +1,22 @@
+<!--
+ * @overview HTML templates of the <i>ccm</i>-based web component for a racing board game.
+ * @author André Kless <andre.kless@web.de> 2025
+-->
+
+<ccm-template key="choose_racetrack">
+  <section id="choose_board">
+    <h1 data-lang="choose_racetrack"></h1>
+    <div id="boards"></div>
+  </section>
+</ccm-template>
+
+<ccm-template key="board">
+  <article>
+    <h2>%name%</h2>
+    <div class="board" style="grid-template-columns: repeat(%width%, %size%px); grid-template-rows: repeat(%height%, %size%px);"></div>
+  </article>
+</ccm-template>
+
+<ccm-template key="field">
+  <div class="field" style="background-image: url("%path%/fields/%id%.jpg"></div>
+</ccm-template>
